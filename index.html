@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artful.chat - For Sale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>artful.chat</h1>
+        <p class="tagline">A premium brand for the future of creative communication.</p>
+        <p class="cta">This domain is available for acquisition. For serious inquiries, please contact us below.</p>
+        <div id="contact-info"></div>
+    </div>
+    <footer>
+        <p>A digital asset from the portfolio of Visionary Ventures.</p>
+    </footer>
+    <script>
+        const user = 'haq.sajjad220';
+        const domain = 'gmail.com';
+        const emailAddress = `${user}@${domain}`;
+        const subject = 'Inquiry about artful.chat';
+
+        const contactElement = document.getElementById('contact-info');
+        const mailtoLink = document.createElement('a');
+        mailtoLink.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
+        mailtoLink.textContent = emailAddress;
+        contactElement.appendChild(mailtoLink);
+    </script>
+</body>
+</html>
